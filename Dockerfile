@@ -34,4 +34,4 @@ EXPOSE 8001
 ENV DOCKER_HOST https://swarm:2375
 
 # run jupyterhub
-ENTRYPOINT ["jupyterhub", "-f", "/srv/jupyterhub_config/jupyterhub_config.py"]
+ENTRYPOINT ["jupyterhub", "-f", "/srv/jupyterhub_config/jupyterhub_config.py", "--no-ssl"]
