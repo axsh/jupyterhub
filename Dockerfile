@@ -16,6 +16,9 @@ RUN apt-get update
 RUN apt-get -y install libpq-dev
 RUN pip install psycopg2
 
+# as suggested in: https://github.com/jupyterhub/jupyterhub/issues/308
+RUN pip install notebook
+
 # add the userlist, spawner, and authenticator
 RUN mkdir /srv/jupyterhub_config
 WORKDIR /srv/jupyterhub_config
