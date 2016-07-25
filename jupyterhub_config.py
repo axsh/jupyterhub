@@ -6,7 +6,7 @@ import sys
 sys.path.insert(0, '/srv/jupyterhub_config')
 
 # Base configuration
-c.JupyterHub.log_level = "INFO"
+c.JupyterHub.log_level = "DEBUG"
 c.JupyterHub.db_url = "postgresql://{}:{}@{}:{}/{}".format(
     os.environ['JPY_DB_USER'],
     os.environ['JPY_DB_PASSWORD'],
