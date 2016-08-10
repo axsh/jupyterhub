@@ -34,6 +34,7 @@ class SwarmSpawner(SystemUserSpawner):
         self.node_info = {}
         for i in range(num_nodes):
             node, ip_port = node_info[i]
+            node = node.replace(' ','')
             self.node_info[node] = ip_port.split(":")[0]
         self.log.debug("Swarm nodes are: {}".format(self.node_info))
 
