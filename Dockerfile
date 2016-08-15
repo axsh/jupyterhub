@@ -8,7 +8,7 @@ RUN pip install --upgrade pip
 
 # Install dockerspawner and oauthenticator
 RUN pip install docker-py
-RUN pip install git+git://github.com/jupyter/dockerspawner.git
+RUN pip install git+git://github.com/triggers/dockerspawner.git
 RUN pip install git+git://github.com/triggers/jh-google-oauthenticator.git
 
 # Install psycopg2
